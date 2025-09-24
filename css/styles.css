@@ -2,20 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     background-color: #f4f4f9;
 }
 
 .container {
-    display: grid;
-    grid-template-rows: auto 1fr 2fr auto;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    display: block;
     width: 90%;
-    max-width: 600px;
+    max-width: 650px;
     text-align: center;
     background: #fff;
     padding: 20px;
@@ -27,17 +24,25 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
+    margin-bottom: 10px;
 }
 
+.message {
+    margin: 40px 0;
+    font-size: 1.5rem;
+
+}
 .word-display {
     font-size: 1.5rem;
     letter-spacing: 10px;
     color: #555;
 }
 
-.hangman-drawing {
-    font-size: 2rem;
-    color: #333;
+.hangman {
+    display: block;
+    margin: 40px auto;
+    background: #ff4;
+    border-radius: 10px;
 }
 
 .letters {
@@ -64,4 +69,5 @@ body {
 .footer {
     font-size: 1rem;
     color: #777;
+    margin-top: 10px;
 }
